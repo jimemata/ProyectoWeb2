@@ -1,0 +1,37 @@
+.titulo1{
+    font-size: 50px;
+}
+
+.titulo2{
+    font-size: 30px;
+}
+
+.titulo3{
+    font-size: 25px;
+}
+.fondo1{
+    background-color: #2ab8ac;
+}
+
+.titulo4{
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.fondo2{
+    background-color: #ffab52;
+}
+
+/* DISTANCIA DE LA INFROMACIÓN */
+/*valores1 (arriba/abajo) valores2 */
+.container-fluid{
+    padding: 80px 0px;
+}
+
+footer{
+/* (arriba/abajo) primeros valores y los segundos valores (izq-der)*/
+    padding: 30px 0px;
+}
