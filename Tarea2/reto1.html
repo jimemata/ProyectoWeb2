@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reto 1</title>
+    <link href="imagenes/favicon.png" rel="icon"> 
+
+    <!--carga CSS del framework Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background-color:#6a0572; padding: 40px 0;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h1 class="titulo1 text-md-left" style="color:white;">Fotografía Histórica</h1>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-right">
+            <a href="index.html" class="text-white btn btn-light btn-lg" style="background-color:#c84fc1; border:none;">Volver al Menú</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container my-5">
+        <div class="row align-items-center">
+          <!-- Columna de texto -->
+          <div class="col-md-6">
+            <h2 class="mb-3">FOTOGRAFÍA</h2>
+            <p class="parrafo1">
+              La primera fotografía de una persona fue tomada por accidente. En 1838, Louis Daguerre capturó una imagen del Boulevard du Temple en París. Debido al largo tiempo de exposición (varios minutos), la calle aparece vacía… excepto por un hombre que se estaba lustrando los zapatos y permaneció quieto el tiempo suficiente para quedar registrado en la imagen.
+              <br><br>
+              ¡Así, sin querer, se convirtió en la primera persona fotografiada de la historia!
+            </p>
+            <a href="#contacto" class="btn btn-lg" style="background-color:#c84fc1; color:white; font-weight:bold;">CONOCER MÁS</a>
+          </div>
+
+          <!-- Columna de imagen -->
+          <div class="col-md-6">
+            <img src="imagenes/flores.jpg" alt="Flores" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="background-color:#6a0572; padding: 30px 0;">
+      <div class="container">
+        <h2 class="text-center text-white tam">Derechos Reservados 2025</h2>
+      </div>
+    </footer>
+
+    <!--carga JS de elementos interactivos-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
