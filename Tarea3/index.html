@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acuario del Pacífico</title>
+    <link rel="icon" href="imagenes/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-fish"></i>
+                    Acuario del Pacífico
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explora el Mundo Marino</h1>
+            <p>Descubre la vida acuática más fascinante del Océano Pacífico</p>
+            <a href="#contenido" class="cta-button">
+                <i class="fas fa-arrow-down"></i>
+                Comenzar Exploración
+            </a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Section 1: Biodiversidad Marina -->
+        <section id="contenido" class="section-card">
+            <h2 class="section-title">
+                <i class="fas fa-water"></i>
+                Biodiversidad Marina del Pacífico
+            </h2>
+            <div class="section-content">
+                <p>El Océano Pacífico alberga la mayor diversidad marina del planeta, con más de 25,000 especies documentadas. Desde las profundidades abisales hasta los arrecifes de coral, cada ecosistema presenta adaptaciones únicas que han evolucionado durante millones de años.</p>
+                <p>En nuestras instalaciones, podrás observar tiburones, rayas, medusas bioluminiscentes, y una amplia variedad de peces tropicales en ambientes que recrean fielmente sus hábitats naturales.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Multimedia-->
+        <section class="section-card">
+            <h2 class="section-title">
+                <i class="fas fa-play-circle"></i>
+                Experiencia Multimedia
+            </h2>
+            <div class="section-content">
+                <p>Sumérgete en la experiencia completa con nuestro contenido audiovisual exclusivo.</p>
+                <div class="media-container">
+                    <div class="media-container">
+                    <div class="video-container">
+                        <video src="videos/video1.mp4" muted autoplay playsinline loop></video>
+                    </div>
+                    <div class="video-container">
+                        <video src="videos/video2.mp4" muted autoplay playsinline loop></video>
+                    </div>
+                </div>
+                </div>
+                <div class="audio-player">
+                    <h3><i class="fas fa-volume-up"></i> Sonidos del Océano</h3>
+                    <p>Escucha los sonidos reales grabados en las profundidades del Pacífico</p>
+                    <audio controls>
+                        <source src="audios/audio1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 3: Conservación -->
+        <section class="section-card">
+            <h2 class="section-title">
+                <i class="fas fa-leaf"></i>
+                Conservación Marina
+            </h2>
+            <div class="section-content">
+                <p>Nuestro compromiso va más allá de la exhibición. Participamos activamente en programas de conservación marina, investigación científica y educación ambiental. Cada visita contribuye directamente a la protección de los ecosistemas marinos.</p>
+                <p>Trabajamos con organizaciones internacionales para el rescate y rehabilitación de especies en peligro, especialmente tortugas marinas, mamíferos marinos y coral de arrecife.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Ubicación -->
+        <section class="section-card">
+            <h2 class="section-title">
+                <i class="fas fa-map-marker-alt"></i>
+                Visítanos
+            </h2>
+            <div class="section-content">
+                <p>Estamos ubicados en Long Beach, California, con fácil acceso desde Los Ángeles. Nuestras instalaciones cuentan con estacionamiento gratuito y son completamente accesibles.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.2!2d-118.195!3d33.7625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd313f3a3a3a3a%3A0x3a3a3a3a3a3a3a3a!2sAquarium%20of%20the%20Pacific!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Actividades Interactivas -->
+        <section class="section-card">
+            <h2 class="section-title">
+                <i class="fas fa-hand-point-up"></i>
+                Experiencias Interactivas
+            </h2>
+            <div class="section-content">
+                <p>Participa en nuestras actividades educativas diseñadas para todas las edades.</p>
+                <div class="interactive-buttons">
+                    <button class="interactive-btn" onclick="showAlert('Alimentación')">
+                        <i class="fas fa-utensils"></i>
+                        Alimentación de Peces
+                    </button>
+                    <button class="interactive-btn" onclick="showAlert('Buceo')">
+                        <i class="fas fa-swimming-pool"></i>
+                        Buceo Virtual
+                    </button>
+                    <button class="interactive-btn" onclick="showAlert('Laboratorio')">
+                        <i class="fas fa-microscope"></i>
+                        Laboratorio Marino
+                    </button>
+                    <button class="interactive-btn" onclick="showAlert('Nocturno')">
+                        <i class="fas fa-moon"></i>
+                        Tour Nocturno
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section id="suscripcion" class="subscription-form">
+            <h3><i class="fas fa-envelope"></i> Mantente Conectado</h3>
+            <p>Recibe contenido exclusivo sobre el mundo marino</p>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Teléfono (opcional)">
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Suscribirse
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <!-- WhatsApp-->
+    <div class="whatsapp-chat" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const scrollBtn = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function openWhatsApp() {
+            window.open('https://wa.me/1234567890?text=Hola,%20me%20interesa%20información%20sobre%20el%20acuario', '_blank');
+        }
+
+        function showAlert(activity) {
+            alert(`¡Te has registrado para: ${activity}!\nTe contactaremos pronto con más información.`);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('¡Gracias por suscribirte! Te enviaremos información pronto.');
+            event.target.reset();
+        }
+
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+
+     <footer>
+        Acuario del pacífico | © Derechos Reservados 2025
+     </footer>
+</body>
+</html>
