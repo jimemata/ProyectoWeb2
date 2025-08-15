@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Vivero</title>
+  <link rel="icon" href="imagenes/favicon.ico">
+  <link rel="stylesheet" href="css/reglas.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="header bg-success text-white">
+  <nav class="navbar navbar-expand-md navbar-dark container py-3">
+    <h1 class="h3 m-0">El Bosque Mágico</h1>
+
+    <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Toggle navigation">
+      &#9776; 
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center justify-content-md-end" id="navbarMenu">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="ubicacion.html">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <section class="blog py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Consejos de jardinería</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card blog-card p-3">
+            <img src="imagenes/suculenta.jpg" class="card-img-top" alt="Consejo 1">
+            <div class="card-body">
+              <h5 class="card-title">Cómo cuidar tus suculentas</h5>
+              <p class="card-text">Aprendé a regarlas, trasplantarlas y elegir la mejor ubicación para su crecimiento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card p-3">
+            <img src="imagenes/abeja.jpg" class="card-img-top" alt="Consejo 2">
+            <div class="card-body">
+              <h5 class="card-title">Plantas que purifican el aire</h5>
+              <p class="card-text">Conocé las especies ideales para interiores y oficinas, y sus beneficios para la salud.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card p-3">
+            <img src="imagenes/flores4.jpg" class="card-img-top" alt="Consejo 3">
+            <div class="card-body">
+              <h5 class="card-title">Errores comunes al fertilizar</h5>
+              <p class="card-text">Descubrí qué prácticas evitar al aplicar abonos para no dañar tus plantas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-fotos py-5">
+    <div class="container">
+      <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/4.png" class="d-block w-100" alt="Planta 1">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/5.png" class="d-block w-100" alt="Planta 2">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/6.png" class="d-block w-100" alt="Planta 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<div class="whatsapp-chat" onclick="openWhatsApp()">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+  <footer class="bg-success text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 Vivero "El Bosque Mágico". Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.blog-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+
+<script>
+  function openWhatsApp() {
+    window.open("https://wa.me/+50688888888?text=Hola,%20me%20interesa%20información%20sobre%20el%20vivero", "_blank");
+  }
+</script>
+</body>
+</html>
